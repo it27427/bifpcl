@@ -1,3 +1,7 @@
+body {
+  font-size: 0.875rem;
+}
+
 figure {
   margin: 0;
 }
@@ -5,4 +9,10 @@ figure {
 .loadericon {
   width: 20rem;
   height: 20rem;
+}
+
+.topbar {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
 }
