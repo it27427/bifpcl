@@ -1,7 +1,6 @@
-const preloader = document.querySelector('#preloader');
-
-function showHidePreloader() {
+const hidePreloader = () => {
+  const preloader = document.querySelector('#preloader');
   preloader.classList.add('d-none');
-}
+};
 
-window.addEventListener('load', showHidePreloader);
+window.addEventListener('load', hidePreloader);
