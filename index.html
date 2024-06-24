@@ -9,223 +9,240 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <div class="preloader">
-      <figure class="loadericon"></figure>
-      <svg
-        id="mainSVG"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 800 600"
+      <figure
+        class="loadericon d-flex align-items-center justify-content-center overflow-hidden"
       >
-        <defs>
-          <filter id="drop" x="-100%" y="-100%" width="250%" height="250%">
-            <feGaussianBlur stdDeviation="5" result="coloredBlur" />
-            <feOffset dx="0" dy="60" result="offsetblur"></feOffset>
-            <feFlood
-              id="glowAlpha"
-              flood-color="#555"
-              flood-opacity="0.12"
-            ></feFlood>
-            <feComposite in2="offsetblur" operator="in"></feComposite>
-            <feMerge>
-              <feMergeNode />
-              <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-          </filter>
+        <svg
+          id="mainSVG"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 600"
+        >
+          <defs>
+            <filter id="drop" x="-100%" y="-100%" width="250%" height="250%">
+              <feGaussianBlur stdDeviation="5" result="coloredBlur" />
+              <feOffset dx="0" dy="60" result="offsetblur"></feOffset>
+              <feFlood
+                id="glowAlpha"
+                flood-color="#555"
+                flood-opacity="0.12"
+              ></feFlood>
+              <feComposite in2="offsetblur" operator="in"></feComposite>
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+            </filter>
 
-          <filter id="drop2" x="-100%" y="-100%" width="250%" height="250%">
-            <feGaussianBlur stdDeviation="6" result="coloredBlur" />
-            <feOffset dx="0" dy="6" result="offsetblur"></feOffset>
-            <feFlood
-              id="glowAlpha"
-              flood-color="#555"
-              flood-opacity="0.51"
-            ></feFlood>
-            <feComposite in2="offsetblur" operator="in"></feComposite>
-            <feMerge>
-              <feMergeNode />
-              <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-          </filter>
+            <filter id="drop2" x="-100%" y="-100%" width="250%" height="250%">
+              <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+              <feOffset dx="0" dy="6" result="offsetblur"></feOffset>
+              <feFlood
+                id="glowAlpha"
+                flood-color="#555"
+                flood-opacity="0.51"
+              ></feFlood>
+              <feComposite in2="offsetblur" operator="in"></feComposite>
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+            </filter>
 
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
-              result="cm"
-            />
-            <feBlend />
-          </filter>
-          <linearGradient
-            id="grad1"
-            gradientUnits="userSpaceOnUse"
-            x1="400"
-            y1="100"
-            x2="400"
-            y2="600"
-          >
-            <stop offset="0" style="stop-color: #059ff6" />
-            <stop offset="1" style="stop-color: #0369f3" />
-          </linearGradient>
-          <path id="copyright-cg" d="" />
-          <linearGradient
-            id="grad2"
-            gradientUnits="userSpaceOnUse"
-            x1="400"
-            y1="200"
-            x2="400"
-            y2="400"
-          >
-            <stop offset="0" style="stop-color: #059ff6" />
-            <stop offset="1" style="stop-color: #0408a7" />
-          </linearGradient>
-          <linearGradient
-            id="grad3"
-            gradientUnits="userSpaceOnUse"
-            x1="400"
-            y1="500"
-            x2="400"
-            y2="600"
-          >
-            <stop offset="0" style="stop-color: #059ff6" />
-            <stop offset="1" style="stop-color: #0369f3" />
-          </linearGradient>
-
-          <linearGradient
-            id="grad4"
-            gradientUnits="userSpaceOnUse"
-            x1="400"
-            y1="200"
-            x2="400"
-            y2="300"
-          >
-            <stop offset="0" style="stop-color: #02dbfe" />
-            <stop offset="1" style="stop-color: #0369f3" />
-          </linearGradient>
-
-          <linearGradient
-            id="grad5"
-            gradientUnits="userSpaceOnUse"
-            x1="400"
-            y1="100"
-            x2="400"
-            y2="600"
-          >
-            <stop offset="0" style="stop-color: #0369f3" />
-            <stop offset="1" style="stop-color: #02dbfe" />
-          </linearGradient>
-
-          <clipPath id="mainMask">
-            <circle cx="400" cy="300" r="100" />
-          </clipPath>
-
-          <clipPath id="otherMask">
-            <rect x="300" y="0" width="200" height="400" rx="100" ry="100" />
-          </clipPath>
-        </defs>
-
-        <g filter="url(#drop)">
-          <g id="whole" clip-path="url(#mainMask)">
-            <g class="dots1" filter="url(#goo)" fill="url(#grad1)">
-              <circle
-                class="outline"
-                cx="400"
-                cy="300"
-                r="90"
-                fill="none"
-                stroke="#0369F3"
-                stroke-width="23"
-                stroke-dasharray="160 65"
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="7"
+                result="blur"
               />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-            </g>
-
-            <g class="dots2" filter="url(#goo)" fill="url(#grad2)">
-              <circle
-                class="outline"
-                cx="400"
-                cy="300"
-                r="90"
-                fill="none"
-                stroke="#0408A7"
-                stroke-width="23"
-                stroke-dasharray="160 40"
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
+                result="cm"
               />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-            </g>
+              <feBlend />
+            </filter>
+            <linearGradient
+              id="grad1"
+              gradientUnits="userSpaceOnUse"
+              x1="400"
+              y1="100"
+              x2="400"
+              y2="600"
+            >
+              <stop offset="0" style="stop-color: #059ff6" />
+              <stop offset="1" style="stop-color: #0369f3" />
+            </linearGradient>
+            <path id="copyright-cg" d="" />
+            <linearGradient
+              id="grad2"
+              gradientUnits="userSpaceOnUse"
+              x1="400"
+              y1="200"
+              x2="400"
+              y2="400"
+            >
+              <stop offset="0" style="stop-color: #059ff6" />
+              <stop offset="1" style="stop-color: #0408a7" />
+            </linearGradient>
+            <linearGradient
+              id="grad3"
+              gradientUnits="userSpaceOnUse"
+              x1="400"
+              y1="500"
+              x2="400"
+              y2="600"
+            >
+              <stop offset="0" style="stop-color: #059ff6" />
+              <stop offset="1" style="stop-color: #0369f3" />
+            </linearGradient>
 
-            <g class="dots3" filter="url(#goo)" fill="url(#grad3)">
-              <circle
-                class="outline"
-                cx="400"
-                cy="300"
-                r="90"
-                fill="none"
-                stroke="url(#grad3)"
-                stroke-width="23"
-                stroke-dasharray="240 "
-              />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-            </g>
+            <linearGradient
+              id="grad4"
+              gradientUnits="userSpaceOnUse"
+              x1="400"
+              y1="200"
+              x2="400"
+              y2="300"
+            >
+              <stop offset="0" style="stop-color: #02dbfe" />
+              <stop offset="1" style="stop-color: #0369f3" />
+            </linearGradient>
 
-            <g class="dots4" filter="url(#goo)" fill="url(#grad4)">
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
-              <circle class="dot" cx="0" cy="0" r="20" />
+            <linearGradient
+              id="grad5"
+              gradientUnits="userSpaceOnUse"
+              x1="400"
+              y1="100"
+              x2="400"
+              y2="600"
+            >
+              <stop offset="0" style="stop-color: #0369f3" />
+              <stop offset="1" style="stop-color: #02dbfe" />
+            </linearGradient>
+
+            <clipPath id="mainMask">
+              <circle cx="400" cy="300" r="100" />
+            </clipPath>
+
+            <clipPath id="otherMask">
+              <rect x="300" y="0" width="200" height="400" rx="100" ry="100" />
+            </clipPath>
+          </defs>
+
+          <g filter="url(#drop)">
+            <g id="whole" clip-path="url(#mainMask)">
+              <g class="dots1" filter="url(#goo)" fill="url(#grad1)">
+                <circle
+                  class="outline"
+                  cx="400"
+                  cy="300"
+                  r="90"
+                  fill="none"
+                  stroke="#0369F3"
+                  stroke-width="23"
+                  stroke-dasharray="160 65"
+                />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+              </g>
+
+              <g class="dots2" filter="url(#goo)" fill="url(#grad2)">
+                <circle
+                  class="outline"
+                  cx="400"
+                  cy="300"
+                  r="90"
+                  fill="none"
+                  stroke="#0408A7"
+                  stroke-width="23"
+                  stroke-dasharray="160 40"
+                />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+              </g>
+
+              <g class="dots3" filter="url(#goo)" fill="url(#grad3)">
+                <circle
+                  class="outline"
+                  cx="400"
+                  cy="300"
+                  r="90"
+                  fill="none"
+                  stroke="url(#grad3)"
+                  stroke-width="23"
+                  stroke-dasharray="240 "
+                />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+              </g>
+
+              <g class="dots4" filter="url(#goo)" fill="url(#grad4)">
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+                <circle class="dot" cx="0" cy="0" r="20" />
+              </g>
             </g>
           </g>
-        </g>
-        <g filter="url(#drop2)">
-          <g clip-path="url(#otherMask)">
-            <g class="dots5" fill="url(#grad2)" filter="url(#goo)">
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
-              <circle class="outsideDot" cx="0" cy="0" r="20" />
+          <g filter="url(#drop2)">
+            <g clip-path="url(#otherMask)">
+              <g class="dots5" fill="url(#grad2)" filter="url(#goo)">
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+                <circle class="outsideDot" cx="0" cy="0" r="20" />
+              </g>
             </g>
           </g>
-        </g>
-      </svg>
+        </svg>
+      </figure>
     </div>
 
+    <script src="assets/js/loader/loader.js"></script>
+    <script src="assets/js/back-top/back-top.js"></script>
+    <script src="assets/js/back-top/backtop.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/tooltip/tooltip.js"></script>
     <script src="assets/js/gsap/gsap.min.js"></script>
     <script src="assets/js/gsap/CustomEase.min.js"></script>
     <script>
