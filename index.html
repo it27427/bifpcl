@@ -9,8 +9,7 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/select/select-theme-chosen.css" />
-    <link rel="stylesheet" href="assets/css/select/select-theme-default.css" />
+    <link rel="stylesheet" href="assets/css/select/dynamicselect.css" />
     <link rel="stylesheet" href="assets/css/swiper/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
@@ -629,12 +628,32 @@
           </div>
 
           <!-- LANGUAGE-DROPDOWN -->
+          <select
+            id="language"
+            name="language"
+            data-placeholder="Select Language"
+            data-dynamic-select
+          >
+            <option
+              value="Bangla"
+              data-img="assets/images/flags/ban.gif"
+            ></option>
+            <option
+              value="English"
+              data-img="assets/images/flags/usa.gif"
+            ></option>
+            <option
+              value="Hindi"
+              data-img="assets/images/flags/ind.gif"
+            ></option>
+          </select>
         </nav>
       </div>
     </header>
     <!-- HEADER-END -->
 
     <script src="assets/js/loader/loader.js"></script>
+    <script src="assets/js/select/dynamicselect.js"></script>
     <script src="assets/js/back-top/back-top.js"></script>
     <script src="assets/js/back-top/backtotop.js"></script>
     <script src="assets/js/swiper/swiper.min.js"></script>
