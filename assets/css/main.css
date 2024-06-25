@@ -69,3 +69,20 @@ figure {
   inset: 0;
   z-index: 9999;
 }
+
+button:focus,
+.btn:focus,
+input:focus,
+select:focus {
+  box-shadow: none;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  transform: rotate(90deg);
+  color: red;
+}

@@ -562,9 +562,41 @@
         <nav class="d-flex align-items-center justify-content-between">
           <!-- HAMBURGER-MENU -->
           <div class="d-lg-none d-block">
-            <button>
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
               <i class="ri-menu-2-line"></i>
             </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="mobileMenu"
+              aria-labelledby="mobileMenuLabel"
+            >
+              <div class="offcanvas-header">
+                <a href="index.html">
+                  <figure
+                    class="logo d-flex align-items-center justify-content-center overflow-hiden"
+                  >
+                    <img
+                      src="assets/images/logo/logo.webp"
+                      alt="BRAND-LOGO"
+                      class="img-fluid"
+                    />
+                  </figure>
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
           </div>
 
           <!-- MOBILE-MENU -->
