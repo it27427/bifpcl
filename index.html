@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
+  <body class="bg-body-tertiary text-body">
     <!-- PRELOADER-START -->
     <div
       class="w-100 vh-100 d-flex align-items-center justify-content-center"
@@ -245,7 +245,7 @@
     <!-- TOPBAR-START -->
     <div class="topbar bg-primary-subtle">
       <marquee
-        class="fw-semibold text-black"
+        class="fw-semibold text-black text-sm"
         width="100%"
         direction="left"
         height="40px"
@@ -551,6 +551,28 @@
       </marquee>
     </div>
     <!-- TOPBAR-END -->
+
+    <!-- HEADER-START -->
+    <header
+      class="header sticky-top w-100 d-flex align-items-center bg-white border-bottom"
+    >
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <a href="index.html">
+            <figure
+              class="logo d-flex align-items-center justify-content-center overflow-hiden"
+            >
+              <img
+                src="assets/images/logo/logo.webp"
+                alt="BRAND-LOGO"
+                class="img-fluid"
+              />
+            </figure>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER-END -->
 
     <script src="assets/js/loader/loader.js"></script>
     <script src="assets/js/back-top/back-top.js"></script>
