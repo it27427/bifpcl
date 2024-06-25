@@ -63,3 +63,9 @@ figure {
   background: transparent;
   color: var(--navlinkhover);
 }
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
