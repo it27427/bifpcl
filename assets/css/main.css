@@ -54,7 +54,11 @@ figure {
   padding-block: 0.4rem;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover:not(.active) {
+  color: var(--navlinkhover);
+}
+
+.dropdown-item.active {
   color: var(--navlinkhover);
 }
 
@@ -70,14 +74,17 @@ figure {
   z-index: 9999;
 }
 
+button:hover,
 button:focus,
+.btn:hover,
 .btn:focus,
 input:focus,
 select:focus {
   box-shadow: none;
 }
 
-.btn-close:focus {
+.btn-close:focus,
+.accordion-button:focus {
   box-shadow: none;
 }
 
@@ -85,4 +92,29 @@ select:focus {
 .btn-close:focus {
   transform: rotate(90deg);
   color: red;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.accordion-button {
+  padding: 0;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 0;
 }

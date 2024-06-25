@@ -596,6 +596,56 @@
                   aria-label="Close"
                 ></button>
               </div>
+
+              <div class="offcanvas-body">
+                <div class="d-flex flex-column">
+                  <div class="accordion" id="mobileDropdown">
+                    <div class="accordion-item">
+                      <div
+                        class="accordion-header d-flex align-items-center justify-content-between"
+                      >
+                        <a class="dropdown-item w-25" href="about.html">
+                          About Us
+                        </a>
+                        <button
+                          class="accordion-button collapsed w-75"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseDropdown"
+                          aria-expanded="false"
+                          aria-controls="collapseDropdown"
+                        ></button>
+                      </div>
+                      <div
+                        id="collapseDropdown"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#mobileDropdown"
+                      >
+                        <div class="accordion-body p-0">
+                          <div class="d-flex flex-column gap-1">
+                            <a
+                              class="dropdown-item"
+                              href="company-profile.html"
+                            >
+                              Company Profile
+                            </a>
+                            <a
+                              class="dropdown-item"
+                              href="board-of-directors.html"
+                            >
+                              Board of Directors
+                            </a>
+                            <a class="dropdown-item" href="contact.html">
+                              Contact Us
+                            </a>
+                            <a class="dropdown-item" href="#"> Directory </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -662,7 +712,7 @@
             </ul>
           </div>
 
-          <!-- LANGUAGE-DROPDOWN -->
+          <!-- SELECT-LANGUAGE-DROPDOWN -->
           <select
             id="language"
             name="language"
