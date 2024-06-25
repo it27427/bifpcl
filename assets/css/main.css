@@ -1,3 +1,8 @@
+:root {
+  --navlinktext: #343a40;
+  --navlinkhover: #6610f2;
+}
+
 body {
   font-size: 0.875rem;
 }
@@ -24,4 +29,37 @@ figure {
 .logo {
   width: 4rem;
   height: 4rem;
+}
+
+.nav-link {
+  color: var(--navlinktext);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 350ms ease-in;
+}
+
+.nav-link:hover {
+  color: var(--navlinkhover);
+}
+
+.dropdown-menu {
+  top: 1.25rem !important;
+}
+
+.dropdown-item {
+  color: var(--navlinktext);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 350ms ease-in;
+  padding-block: 0.4rem;
+}
+
+.dropdown-item:hover {
+  color: var(--navlinkhover);
+}
+
+.dropdown-item:focus,
+.dropdown-item:active {
+  background: transparent;
+  color: var(--navlinkhover);
 }
