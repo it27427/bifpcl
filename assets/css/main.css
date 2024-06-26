@@ -307,6 +307,15 @@ select:focus {
 
 .about-thumb {
   position: relative;
+  height: 18.75rem;
+}
+
+.about-thumb img {
+  transition: transform 350ms ease;
+}
+
+.about-thumb:hover img {
+  transform: scale(0.99);
 }
 
 .about-thumb::before,
@@ -333,6 +342,50 @@ select:focus {
   height: 50%;
   bottom: -1.5em;
   right: -1.5em;
+}
+
+.missionbox {
+  min-height: 18.75rem;
+  display: flex;
+  align-items: center;
+}
+.missionbox p {
+  font-size: 1.125rem;
+}
+
+.mission-title,
+.vision-title {
+  font-size: 3rem;
+  position: relative;
+}
+
+.mission-title {
+  padding-left: 0.75rem;
+}
+
+.vision-title {
+  padding-right: 0.75rem;
+}
+
+.mission-title::after {
+  content: '';
+  background: var(--navlinkhover);
+  position: absolute;
+  width: 0.25rem;
+  height: 2.5rem;
+  left: 0;
+  top: 0.625rem;
+  border-radius: 6.25rem;
+}
+
+.vision-title::after {
+  content: '';
+  background: var(--navlinkhover);
+  position: absolute;
+  width: 0.25rem;
+  height: 2.5rem;
+  right: 0;
+  top: 0.625rem;
 }
 
 @media screen and (max-width: 48rem) {
