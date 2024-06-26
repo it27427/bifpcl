@@ -388,6 +388,48 @@ select:focus {
   top: 0.625rem;
 }
 
+.homeslider {
+  height: 20rem;
+}
+
+.carousel-item {
+  height: 20rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 10;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background: var(--white);
+  border: solid 0.0938rem var(--white);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+.carousel-indicators {
+  gap: 0.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  margin: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  border: 0;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
@@ -409,5 +451,23 @@ select:focus {
   .breadcrumb-item.active,
   .breadcrumb-item a {
     font-size: 1rem;
+  }
+
+  .homeslider {
+    height: 27rem;
+  }
+
+  .carousel-item {
+    height: 27rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
