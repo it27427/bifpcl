@@ -2,6 +2,11 @@
   --navlinktext: #343a40;
   --navlinkhover: #6610f2;
   --footerbg: #373a40;
+  --facebook: #1877f2;
+  --twitter: #1da1f2;
+  --instagram: #fcaf45;
+  --linkedin: #0077b5;
+  --white: #ffffff;
 }
 
 body {
@@ -138,4 +143,40 @@ select:focus {
 
 .footer nav a {
   font-size: 0.8125rem;
+  transition: all 350ms ease-in;
+}
+
+.social-link {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-link i {
+  font-size: 1.125rem;
+}
+
+.social-link.facebook {
+  background: var(--facebook);
+  color: var(--white);
+}
+
+.social-link.twitter {
+  background: var(--twitter);
+  color: var(--white);
+}
+
+.social-link.instagram {
+  background: var(--instagram);
+  color: var(--white);
+}
+
+.social-link.linkedin {
+  background: var(--linkedin);
+  color: var(--white);
 }
