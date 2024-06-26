@@ -17,10 +17,6 @@ figure {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .loadericon {
   width: 20rem;
   height: 20rem;
@@ -213,6 +209,7 @@ select:focus {
 .breadcrumb-item a {
   color: var(--white);
   font-size: 0.875rem;
+  text-decoration: none;
 }
 
 .hero-title {
