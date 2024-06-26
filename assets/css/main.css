@@ -180,3 +180,6 @@ select:focus {
   background: var(--linkedin);
   color: var(--white);
 }
+
+.hero {
+}
