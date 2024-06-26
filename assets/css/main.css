@@ -298,6 +298,13 @@ select:focus {
   font-size: 1rem;
 }
 
+.directorname {
+  display: inline-block;
+  border-bottom: solid 0.125rem var(--navlinkhover);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
