@@ -293,6 +293,11 @@ select:focus {
   margin-inline: auto;
 }
 
+.infotext {
+  color: rgb(33, 37, 41);
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
