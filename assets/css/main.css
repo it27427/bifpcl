@@ -449,6 +449,18 @@ select:focus {
   display: none;
 }
 
+.tabletext {
+  color: var(--navlinkhover);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.valuetext {
+  color: var(--footerbg);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
