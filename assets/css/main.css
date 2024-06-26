@@ -7,6 +7,7 @@
   --instagram: #fcaf45;
   --linkedin: #0077b5;
   --white: #ffffff;
+  --black: #000000;
 }
 
 body {
@@ -223,6 +224,63 @@ select:focus {
   position: absolute;
   inset: 0;
   z-index: 1;
+}
+
+.card {
+  border-radius: 0;
+  height: 100%;
+  padding: 0.875rem;
+  transition: all 350ms ease;
+}
+
+.card:hover {
+  border: 0;
+  box-shadow: 0.3125rem 0 1.5625rem rgba(0, 0, 0, 0.2);
+}
+
+.card-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.5rem;
+  height: 13.75rem;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 350ms ease;
+}
+
+.card-avatar:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-title {
+  cursor: pointer;
+  color: var(--footerbg);
+  font-size: 1.125rem;
+}
+
+.card-title:hover {
+  color: var(--navlinkhover);
+}
+
+.card-text {
+  color: var(--black);
+  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 62rem) {
