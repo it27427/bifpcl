@@ -503,6 +503,17 @@ select:focus {
   text-decoration: none;
 }
 
+.slideractions {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms ease-in;
+}
+
+.hodSlider:hover .slideractions {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
