@@ -461,6 +461,48 @@ select:focus {
   font-weight: 500;
 }
 
+.cardevent {
+  cursor: pointer;
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardevent img {
+  transition: transform 350ms ease;
+}
+
+.cardevent:hover img {
+  transform: scale(1.1);
+}
+
+.cardevent:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cardevent .content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in;
+}
+
+.event-title {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
