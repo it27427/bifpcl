@@ -3,7 +3,7 @@ const directorSlider = new Swiper('.directorSlider', {
   spaceBetween: 24,
   centeredSlides: false,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
   },
   loop: true,
   navigation: {
@@ -20,5 +20,19 @@ const directorSlider = new Swiper('.directorSlider', {
     1024: {
       slidesPerView: 4,
     },
+  },
+});
+
+const hodSlider = new Swiper('.hodSlider', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
