@@ -283,6 +283,15 @@ select:focus {
   font-size: 0.875rem;
 }
 
+.avatar {
+  width: 17rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 62rem) {
   .hero-title {
     font-size: 3rem;
