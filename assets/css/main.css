@@ -426,6 +426,29 @@ select:focus {
   font-size: 1rem;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: var(--navlinkhover);
+  color: var(--white);
+  border: 0;
+  border-radius: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  width: 0;
+  height: 0;
+  font-size: 0;
+  display: none;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
