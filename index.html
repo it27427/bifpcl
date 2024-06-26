@@ -740,92 +740,119 @@
     <!-- HEADER-END -->
 
     <!-- HERO-SECTION-START -->
-    <section class="homeslider position-relative">
-      <div id="homeslider" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#homeslider"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#homeslider"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#homeslider"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#homeslider"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
+    <section class="homeslider">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-8 col-lg-9">
+            <div class="position-relative">
+              <div
+                id="homeslider"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#homeslider"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#homeslider"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#homeslider"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#homeslider"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active position-relative">
-            <img
-              src="assets/images/homeslider/slide-1.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="Slide-1"
-            />
-            <div class="overlay"></div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active position-relative">
+                    <img
+                      src="assets/images/homeslider/slide-1.jpg"
+                      class="d-block w-100 h-100 object-fit-cover"
+                      alt="Slide-1"
+                    />
+                    <div class="overlay"></div>
+                  </div>
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="assets/images/homeslider/slide-2.jpg"
+                      class="d-block w-100 h-100 object-fit-cover"
+                      alt="Slide-2"
+                    />
+                    <div class="overlay"></div>
+                  </div>
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="assets/images/homeslider/slide-3.jpg"
+                      class="d-block w-100 h-100 object-fit-cover"
+                      alt="Slide-3"
+                    />
+                    <div class="overlay"></div>
+                  </div>
+                  <div class="carousel-item position-relative">
+                    <img
+                      src="assets/images/homeslider/slide-4.jpg"
+                      class="d-block w-100 h-100 object-fit-cover"
+                      alt="Slide-4"
+                    />
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item position-relative">
-            <img
-              src="assets/images/homeslider/slide-2.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="Slide-2"
-            />
-            <div class="overlay"></div>
-          </div>
-          <div class="carousel-item position-relative">
-            <img
-              src="assets/images/homeslider/slide-3.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="Slide-3"
-            />
-            <div class="overlay"></div>
-          </div>
-          <div class="carousel-item position-relative">
-            <img
-              src="assets/images/homeslider/slide-4.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="Slide-4"
-            />
-            <div class="overlay"></div>
+
+          <div class="col-md-4 col-lg-3">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center gap-4 w-100"
+            >
+              <div class="boss bg-secondary-subtle w-100 p-3">
+                <div class="boss-thumbnail">
+                  <img
+                    src="assets/images/directors/director-1.png"
+                    alt="Chairman-Thumbnail"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+                <div class="boss-details">
+                  <h5 class="mb-0 bossname">Shri Gurdeep Singh</h5>
+                  <p class="mb-0">Chairman</p>
+                  <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+              </div>
+
+              <div class="boss bg-secondary-subtle w-100 p-3">
+                <div class="boss-thumbnail">
+                  <img
+                    src="assets/images/directors/director-1.png"
+                    alt="Chairman-Thumbnail"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+                <div class="boss-details">
+                  <h5 class="mb-0 bossname">Shri Gurdeep Singh</h5>
+                  <p class="mb-0">Board of Director</p>
+                  <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#homeslider"
-          data-bs-slide="prev"
-        >
-          <span class="icon">
-            <i class="ri-arrow-left-s-line"></i>
-          </span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#homeslider"
-          data-bs-slide="next"
-        >
-          <span class="icon">
-            <i class="ri-arrow-right-s-line"></i>
-          </span>
-        </button>
       </div>
     </section>
     <!-- HERO-SECTION-END -->
