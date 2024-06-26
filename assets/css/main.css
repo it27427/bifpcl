@@ -309,34 +309,30 @@ select:focus {
   position: relative;
 }
 
-.about-thumb::before {
+.about-thumb::before,
+.about-thumb::after {
+  background: var(--navlinkhover);
   content: '';
   position: absolute;
-  width: 45%;
+  -webkit-transform: translate(-0.625rem, -0.625rem);
+  -ms-transform: translate(-0.625rem, -0.625rem);
+  -o-transform: translate(-0.625rem, -0.625rem);
+  transform: translate(-0.625rem, -0.625rem);
   z-index: -1;
+}
+
+.about-thumb::before {
+  width: 45%;
   height: 50%;
   top: 0;
   left: 0;
-  -webkit-transform: translate(-10px, -10px);
-  -ms-transform: translate(-10px, -10px);
-  -o-transform: translate(-10px, -10px);
-  transform: translate(-10px, -10px);
-  background: var(--navlinkhover);
 }
 
 .about-thumb::after {
-  content: '';
-  position: absolute;
   width: 45%;
-  z-index: -1;
   height: 50%;
   bottom: -1.5em;
   right: -1.5em;
-  -webkit-transform: translate(-10px, -10px);
-  -ms-transform: translate(-10px, -10px);
-  -o-transform: translate(-10px, -10px);
-  transform: translate(-10px, -10px);
-  background: var(--navlinkhover);
 }
 
 @media screen and (max-width: 48rem) {
