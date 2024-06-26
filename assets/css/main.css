@@ -293,6 +293,12 @@ select:focus {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 48rem) {
+  .companyprofile .subtitle {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 48rem) {
   .avatar {
     margin-inline: 0;
