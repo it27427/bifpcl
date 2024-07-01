@@ -511,6 +511,11 @@ select:focus {
   display: none;
 }
 
+.tableicon {
+  font-weight: 1.125rem;
+  color: var(--navlinkhover);
+}
+
 .tabletext {
   color: var(--navlinkhover);
   font-size: 0.8125rem;
