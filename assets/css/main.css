@@ -607,7 +607,6 @@ select:focus {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  padding-block: 2rem;
 }
 
 .herolink {
@@ -650,6 +649,10 @@ select:focus {
   color: var(--navlinkhover);
 }
 
+.carousel-inner {
+  border-radius: 0.5rem;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
@@ -676,11 +679,11 @@ select:focus {
     font-size: 1rem;
   }
 
-  .homeslider {
+  /* .homeslider {
     height: 41.5rem;
   }
 
   .carousel-item {
     height: 41.5rem;
-  }
+  } */
 }
