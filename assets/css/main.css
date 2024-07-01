@@ -423,17 +423,37 @@ select:focus {
 }
 
 .boss {
-  height: 20rem;
+  /* height: 10rem; */
+  width: 100%;
+  background: var(--white);
+  box-shadow: var(--cardshadow);
+}
+
+.boss-header {
+  background: var(--navlinkhover);
+  color: var(--white);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.bosstitle {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.boss-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  padding: 1rem;
 }
 
 .boss-thumbnail {
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .boss-details {
@@ -441,11 +461,31 @@ select:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .bossname {
-  font-size: 1rem;
+  color: var(--navlinkhover);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.bossposition {
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-readmore {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-readmore:hover {
+  color: var(--navlinkhover);
 }
 
 .swiper-button-prev,
@@ -679,11 +719,8 @@ select:focus {
     font-size: 1rem;
   }
 
-  /* .homeslider {
-    height: 41.5rem;
-  }
-
+  .homeslider,
   .carousel-item {
-    height: 41.5rem;
-  } */
+    height: 29.125rem;
+  }
 }
