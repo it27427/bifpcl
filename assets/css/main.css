@@ -693,6 +693,23 @@ select:focus {
   border-radius: 0.5rem;
 }
 
+.map {
+  position: relative;
+}
+
+.maplocation {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.5rem;
+  z-index: 100;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
