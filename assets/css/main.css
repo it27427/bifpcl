@@ -578,7 +578,7 @@ select:focus {
 }
 
 .noticeboard {
-  padding: 0.625rem 0 1.25rem 7.5rem;
+  padding: 0.625rem 1.25rem;
   position: relative;
 }
 
