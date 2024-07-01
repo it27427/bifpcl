@@ -7,6 +7,7 @@
   --instagram: #fcaf45;
   --linkedin: #0077b5;
   --white: #ffffff;
+  --light: #f5f6f8;
   --black: #000000;
 }
 
@@ -38,19 +39,35 @@ figure {
   height: 4rem;
 }
 
+.desktopmenu {
+  background: var(--navlinkhover);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
 .nav-link {
-  color: var(--navlinktext);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 350ms ease-in;
 }
 
 .nav-link:hover {
-  color: var(--navlinkhover);
+  color: var(--white);
+}
+
+.dropdown-toggle {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 350ms ease-in;
+}
+
+.dropdown-toggle:hover {
+  color: var(--white);
 }
 
 .dropdown-menu {
-  top: 1.6875rem !important;
+  top: 0.75rem !important;
 }
 
 .dropdown-item {
@@ -120,6 +137,7 @@ select:focus {
 
 .accordion-button:not(.collapsed) {
   background-color: transparent;
+  box-shadow: none;
 }
 
 .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
@@ -490,6 +508,7 @@ select:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-inline: 1.25rem;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
@@ -567,6 +586,15 @@ select:focus {
 .noticelist {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.btn-hamburger {
+  background: var(--navlinkhover);
+  color: var(--white);
+}
+
+.companyname {
+  color: var(--navlinkhover);
 }
 
 @media screen and (max-width: 48rem) {
