@@ -9,6 +9,10 @@
   --white: #ffffff;
   --light: #f5f6f8;
   --black: #000000;
+  --transition: all 250ms ease-in;
+  --shadow: 0 0 0.125rem rgba(0, 0, 0, 0.2);
+  --boxshadow: 0.3125rem 0 1.5625rem rgba(0, 0, 0, 0.2);
+  --cardshadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -50,7 +54,7 @@ figure {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
   font-weight: 500;
-  transition: all 350ms ease-in;
+  transition: var(--transition);
 }
 
 .nav-link:hover {
@@ -59,7 +63,7 @@ figure {
 
 .dropdown-toggle {
   color: rgba(255, 255, 255, 0.8);
-  transition: all 350ms ease-in;
+  transition: var(--transition);
 }
 
 .dropdown-toggle:hover {
@@ -74,7 +78,7 @@ figure {
   color: var(--navlinktext);
   font-size: 0.8125rem;
   font-weight: 500;
-  transition: all 350ms ease-in;
+  transition: var(--transition);
   padding-block: 0.4rem;
 }
 
@@ -162,7 +166,7 @@ select:focus {
 
 .footer nav a {
   font-size: 0.8125rem;
-  transition: all 350ms ease-in;
+  transition: var(--transition);
 }
 
 .social-link {
@@ -248,7 +252,7 @@ select:focus {
   border-radius: 0;
   height: 100%;
   padding: 0.875rem;
-  transition: all 350ms ease;
+  transition: var(--transition);
 }
 
 .card:hover {
@@ -267,7 +271,7 @@ select:focus {
 }
 
 .card-img-top {
-  transition: transform 350ms ease;
+  transition: var(--transition);
 }
 
 .card-avatar:hover .card-img-top {
@@ -329,7 +333,7 @@ select:focus {
 }
 
 .about-thumb img {
-  transition: transform 350ms ease;
+  transition: var(--transition);
 }
 
 .about-thumb:hover img {
@@ -488,7 +492,7 @@ select:focus {
 }
 
 .cardevent img {
-  transition: transform 350ms ease;
+  transition: var(--transition);
 }
 
 .cardevent:hover img {
@@ -512,7 +516,7 @@ select:focus {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: all 300ms ease-in;
+  transition: var(--transition);
 }
 
 .event-title {
@@ -525,7 +529,7 @@ select:focus {
 .slideractions {
   opacity: 0;
   visibility: hidden;
-  transition: all 350ms ease-in;
+  transition: var(--transition);
 }
 
 .hodSlider:hover .slideractions {
@@ -553,14 +557,14 @@ select:focus {
 .noticelink i {
   color: var(--footerbg);
   font-size: 1rem;
-  transition: all 300ms ease;
+  transition: var(--transition);
 }
 
 .noticetext {
   border-bottom: solid 0.0625rem transparent;
   color: var(--footerbg);
   font-size: 0.875rem;
-  transition: all 300ms ease;
+  transition: var(--transition);
 }
 
 .noticelink:hover i,
@@ -594,6 +598,55 @@ select:focus {
 }
 
 .companyname {
+  color: var(--navlinkhover);
+}
+
+.linkmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-block: 2rem;
+}
+
+.herolink {
+  background: var(--white);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: var(--boxshadow);
+  padding: 1rem;
+  width: calc((100% / 2) - 1rem);
+}
+
+.herolink .linkicon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--navlinkhover);
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+.herolink .linktitle {
+  color: var(--footerbg);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.herolink .linktitle:hover {
   color: var(--navlinkhover);
 }
 
