@@ -715,6 +715,15 @@ select:focus {
   z-index: 100;
 }
 
+.notfoundthumb {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
