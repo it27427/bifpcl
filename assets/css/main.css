@@ -511,6 +511,10 @@ select:focus {
   display: none;
 }
 
+.table {
+  background: transparent;
+}
+
 .tableicon {
   font-weight: 1.125rem;
   color: var(--navlinkhover);
@@ -594,9 +598,9 @@ select:focus {
 }
 
 .noticelink {
-  display: flex;
+  display: inline-flex;
   text-decoration: none;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .noticelink i {
@@ -635,6 +639,18 @@ select:focus {
 .noticelist {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+tr,
+td {
+  margin: 0;
+  background: transparent;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .btn-hamburger {
@@ -722,6 +738,17 @@ select:focus {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.btn-download {
+  background: transparent;
+  color: var(--navlinkhover);
+  border: 0;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
 }
 
 @media screen and (max-width: 48rem) {
