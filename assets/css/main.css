@@ -879,6 +879,10 @@ td {
   border-radius: 1rem;
 }
 
+.cardtimeline-details {
+  width: calc(100% - 236px);
+}
+
 .timelinelist {
   display: flex;
   flex-direction: column;
