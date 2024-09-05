@@ -1022,6 +1022,14 @@ table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
   visibility: hidden;
 }
 
+.dropdown-menu {
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  top: 100% !important;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;

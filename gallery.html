@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/magnificpopup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/switch.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="bg-body-tertiary text-body">
@@ -587,7 +588,7 @@
                       class="logo d-flex align-items-center justify-content-center overflow-hiden"
                     >
                       <img
-                        src="assets/images/logo/logo.webp"
+                        src="assets/images/logo/logo.jfif"
                         alt="BRAND-LOGO"
                         class="w-100 h-100 object-fit-cover"
                       />
@@ -668,15 +669,13 @@
               </div>
             </div>
 
-            <!-- MOBILE-MENU -->
-
             <!-- BRAND-LOGO -->
             <a href="index.html">
               <figure
                 class="logo d-flex align-items-center justify-content-center overflow-hiden"
               >
                 <img
-                  src="assets/images/logo/logo.webp"
+                  src="assets/images/logo/logo.jfif"
                   alt="BRAND-LOGO"
                   class="w-100 h-100 object-fit-cover"
                 />
@@ -695,16 +694,16 @@
             </div>
 
             <!-- SELECT-LANGUAGE-DROPDOWN -->
-            <select
-              id="language"
-              name="language"
-              data-placeholder="Select Language"
-              data-dynamic-select
-            >
-              <option value="Eng">Eng</option>
-              <option value="Ban">Ban</option>
-              <option value="Hin">Hin</option>
-            </select>
+            <div class="switch">
+              <input
+                id="language-toggle"
+                class="check-toggle check-toggle-round-flat"
+                type="checkbox"
+              />
+              <label for="language-toggle"></label>
+              <span class="on">BN</span>
+              <span class="off">EN</span>
+            </div>
           </nav>
         </div>
       </header>
@@ -765,7 +764,7 @@
             </li>
 
             <li class="nav-item align-items-center ms-auto">
-              <a href="contact.html" class="btn btn-primary">Contact Us</a>
+              <a href="contact.html" class="btn btn-light">Contact Us</a>
             </li>
           </ul>
         </div>
