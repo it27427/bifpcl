@@ -10,9 +10,9 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/css/remixicon/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/select/dynamicselect.css" />
     <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/switch.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="bg-body-tertiary text-body">
@@ -694,16 +694,16 @@
             </div>
 
             <!-- SELECT-LANGUAGE-DROPDOWN -->
-            <select
-              id="language"
-              name="language"
-              data-placeholder="Select Language"
-              data-dynamic-select
-            >
-              <option value="Eng">Eng</option>
-              <option value="Ban">Ban</option>
-              <option value="Hin">Hin</option>
-            </select>
+            <div class="switch">
+              <input
+                id="language-toggle"
+                class="check-toggle check-toggle-round-flat"
+                type="checkbox"
+              />
+              <label for="language-toggle"></label>
+              <span class="on">BN</span>
+              <span class="off">EN</span>
+            </div>
           </nav>
         </div>
       </header>
@@ -1081,7 +1081,6 @@
     <script src="assets/js/gsap/CustomEase.min.js"></script>
     <script src="assets/js/animations/loaderanimation.js"></script>
     <script src="assets/js/loader/loader.js"></script>
-    <script src="assets/js/select/dynamicselect.js"></script>
     <script src="assets/js/back-top/back-top.js"></script>
     <script src="assets/js/back-top/backtotop.js"></script>
     <script src="assets/js/copyright/copyright.js"></script>

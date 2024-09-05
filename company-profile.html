@@ -667,8 +667,6 @@
               </div>
             </div>
 
-            <!-- MOBILE-MENU -->
-
             <!-- BRAND-LOGO -->
             <a href="index.html">
               <figure
@@ -694,16 +692,16 @@
             </div>
 
             <!-- SELECT-LANGUAGE-DROPDOWN -->
-            <select
-              id="language"
-              name="language"
-              data-placeholder="Select Language"
-              data-dynamic-select
-            >
-              <option value="Eng">Eng</option>
-              <option value="Ban">Ban</option>
-              <option value="Hin">Hin</option>
-            </select>
+            <div class="switch">
+              <input
+                id="language-toggle"
+                class="check-toggle check-toggle-round-flat"
+                type="checkbox"
+              />
+              <label for="language-toggle"></label>
+              <span class="on">BN</span>
+              <span class="off">EN</span>
+            </div>
           </nav>
         </div>
       </header>
