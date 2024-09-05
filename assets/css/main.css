@@ -637,6 +637,21 @@ select:focus {
   border-color: var(--navlinkhover);
 }
 
+#noticetable .noticelink .noticetext {
+  border: 0;
+}
+#noticetable .noticelink:hover .noticetext {
+  border-color: transparent;
+}
+
+table.dataTable thead > tr > th.dt-orderable-asc:hover,
+table.dataTable thead > tr > th.dt-orderable-desc:hover,
+table.dataTable thead > tr > td.dt-orderable-asc:hover,
+table.dataTable thead > tr > td.dt-orderable-desc:hover {
+  outline: none;
+  outline-offset: 0;
+}
+
 .noticelist {
   width: 100%;
   overflow-y: scroll;
@@ -663,6 +678,48 @@ td {
   padding: 0;
   border: 0;
   background: transparent;
+}
+
+.dt-paging {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem !important;
+}
+
+.page-item.active,
+.active > .page-link,
+.page-link.active {
+  background: var(--navlinkhover);
+}
+
+.dt-paging-button:first-child,
+.dt-paging-button:last-child {
+  display: none;
+}
+
+.page-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+div.dt-container div.dt-paging ul.pagination {
+  margin: 0;
+}
+
+.page-item,
+.page-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.page-link.previous,
+.page-link.next {
+  font-size: 1.25rem;
 }
 
 .btn-hamburger {
@@ -916,6 +973,38 @@ td {
   font-size: 1.125rem;
   color: var(--white);
   text-align: center;
+}
+
+table,
+th,
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+td .btn-download {
+  margin-inline: auto;
+}
+
+table.table.dataTable > :not(caption) > * > * {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date,
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  text-align: center;
+}
+
+table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
+  box-shadow: none;
+  background: rgb(243, 241, 245);
 }
 
 @media screen and (max-width: 48rem) {
