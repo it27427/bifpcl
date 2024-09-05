@@ -514,6 +514,41 @@ select:focus {
 
 .table {
   background: transparent;
+  vertical-align: middle;
+}
+
+td,
+th {
+  vertical-align: middle;
+}
+
+.table > :not(caption) > * > * {
+  padding: 15px !important;
+  border: 1.25px solid #dee2e6 !important;
+}
+.table tr {
+  border-bottom: 1.25px solid #dee2e6 !important;
+}
+
+.table .noticelink .noticetext {
+  font-weight: bold;
+}
+
+.table .noticelink .noticetext,
+.table .noticelink:hover .noticetext {
+  border-bottom: 0;
+}
+
+.table .btn-download {
+  font-weight: bold;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-bg-type: rgb(248, 246, 249);
+}
+
+.table tr:nth-child(even) {
+  background: #fffcee;
 }
 
 .tableicon {
@@ -678,48 +713,6 @@ td {
   padding: 0;
   border: 0;
   background: transparent;
-}
-
-.dt-paging {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1.25rem !important;
-}
-
-.page-item.active,
-.active > .page-link,
-.page-link.active {
-  background: var(--navlinkhover);
-}
-
-.dt-paging-button:first-child,
-.dt-paging-button:last-child {
-  display: none;
-}
-
-.page-link:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-div.dt-container div.dt-paging ul.pagination {
-  margin: 0;
-}
-
-.page-item,
-.page-link {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-}
-
-.page-link.previous,
-.page-link.next {
-  font-size: 1.25rem;
 }
 
 .btn-hamburger {
@@ -975,38 +968,9 @@ div.dt-container div.dt-paging ul.pagination {
   text-align: center;
 }
 
-table,
-th,
-td {
-  vertical-align: middle;
-  text-align: center;
-}
-
 td .btn-download {
   margin-inline: auto;
 }
-
-table.table.dataTable > :not(caption) > * > * {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-table.dataTable th.dt-type-numeric,
-table.dataTable th.dt-type-date,
-table.dataTable td.dt-type-numeric,
-table.dataTable td.dt-type-date,
-table.dataTable thead th,
-table.dataTable thead td,
-table.dataTable tfoot th,
-table.dataTable tfoot td {
-  text-align: center;
-}
-
-table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
-  box-shadow: none;
-  background: rgb(243, 241, 245);
-}
-
 .gallerythumb {
   width: 100%;
   height: 240px;
