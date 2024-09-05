@@ -1016,6 +1016,12 @@ table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
   overflow: hidden;
 }
 
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
