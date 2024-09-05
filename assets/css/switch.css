@@ -1,7 +1,6 @@
 .switch {
   position: relative;
   display: inline-block;
-  margin: 0 5px;
 }
 
 .switch > span {
