@@ -1052,6 +1052,42 @@ table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
 }
 
 .dropdown-menu {
+  -webkit-animation-name: slideUpIn;
+  animation-name: slideUpIn;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideUpIn {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes slideUpIn {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
 }
 
 .dropdown:hover .dropdown-menu {
