@@ -1014,6 +1014,35 @@ table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.gallerythumb img {
+  transition: var(--transition);
+}
+
+.gallerythumb:hover img {
+  transform: scale(1.1);
+}
+
+.gallerythumb:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallerythumb .content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 1.25rem;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
 }
 
 .hidden {
