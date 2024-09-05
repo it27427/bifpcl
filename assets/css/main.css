@@ -602,7 +602,7 @@ select:focus {
 .noticelink {
   display: inline-flex;
   text-decoration: none;
-  /* width: 100%; */
+  cursor: pointer;
 }
 
 .noticelink i {
@@ -891,6 +891,9 @@ td {
 
 .timelinelist-item {
   font-size: 15px;
+}
+.downloadtext {
+  font-size: 0.875rem;
 }
 
 @media screen and (max-width: 48rem) {
