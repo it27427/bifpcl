@@ -612,8 +612,19 @@ select:focus {
 .noticetext {
   border-bottom: solid 0.0625rem transparent;
   color: var(--footerbg);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
   transition: var(--transition);
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .noticelink:hover i,
