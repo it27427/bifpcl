@@ -558,7 +558,7 @@ th {
 
 .tabletext {
   color: var(--navlinkhover);
-  font-size: 0.8125rem;
+  font-size: 0.625rem;
   font-weight: 500;
 }
 
@@ -1047,6 +1047,17 @@ td .btn-download {
 .dropdown:hover .dropdown-menu {
   display: block !important;
   top: 100% !important;
+}
+
+.parallax {
+  position: relative;
+  transform: translateY(3rem);
+  opacity: 1;
+  transition: 1s all ease;
+}
+.parallax.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media screen and (max-width: 48rem) {
