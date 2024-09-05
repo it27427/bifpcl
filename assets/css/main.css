@@ -1007,6 +1007,15 @@ table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
   background: rgb(243, 241, 245);
 }
 
+.gallerythumb {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
