@@ -37,12 +37,12 @@ figure {
 }
 
 .header {
-  height: 7rem;
+  height: 6rem;
 }
 
 .logo {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .desktopmenu {
@@ -1058,6 +1058,11 @@ td .btn-download {
 .parallax.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.btn-light {
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 48rem) {
