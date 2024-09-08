@@ -37,12 +37,12 @@ figure {
 }
 
 .header {
-  height: 6rem;
+  height: 5rem;
 }
 
 .logo {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .desktopmenu {
@@ -549,6 +549,11 @@ th {
 
 .table tr:nth-child(even) {
   background: #fffcee;
+}
+
+.noticelist .table tr,
+.noticelist .table > :not(caption) > * > * {
+  border: 0 !important;
 }
 
 .tableicon {
@@ -1078,8 +1083,17 @@ td .btn-download {
 }
 
 @media screen and (max-width: 62rem) {
+  .header {
+    height: 4rem;
+  }
+
   .logo {
-    margin-left: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .companyname {
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 62rem) {
