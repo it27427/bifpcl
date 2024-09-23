@@ -1191,6 +1191,29 @@ td .btn-download {
   box-shadow: var(--card-4) 0px 4px 8px;
 }
 
+.btn-hexa {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  clip-path: polygon(24% 0, 75% 0, 100% 50%, 75% 100%, 24% 100%, 0 50%);
+  /* clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%); */
+  background-color: #161213;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  transition: all 500ms ease-in-out;
+}
+
+.btn-hexa:hover {
+  background-position-y: -50px;
+  transform: translateY(-0.25rem);
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
