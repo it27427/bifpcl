@@ -15,6 +15,12 @@
   --cardshadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12);
   --cardshadow-2: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+
+  --card-1: #4493ad;
+  --card-2: #298dc1;
+  /* --card-2: #1793cd; */
+  --card-3: #c4a865;
+  --card-4: #85011e;
 }
 
 body {
@@ -1081,9 +1087,118 @@ td .btn-download {
   font-weight: 600;
 }
 
+.cardcorporate {
+  position: relative;
+  height: 100%;
+  /* height: 260px; */
+  border-radius: 10px;
+  background: var(--white);
+  border: solid 1.5px #ddd;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cardcorporate::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 50%;
+  width: calc(100% + 1rem);
+  z-index: -1;
+}
+
+.corpcard-1::before {
+  margin-bottom: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.corpcard-1::before {
+  background: var(--card-1);
+}
+
+.corpcard-2::before {
+  background: var(--card-2);
+
+  top: 0;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.corpcard-3::before {
+  background: var(--card-3);
+
+  margin-bottom: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.corpcard-4::before {
+  background: var(--card-4);
+
+  top: 0;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cardcorporate .cardnumber {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.25rem transparent;
+  border-radius: 100%;
+  font-size: 2.25rem;
+  font-weight: 700;
+  background: var(--white);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.corpcard-1 .cardnumber {
+  top: -2rem;
+  border-color: var(--card-1);
+  color: var(--card-1);
+  box-shadow: var(--card-1) 0px 4px 8px;
+}
+.corpcard-2 .cardnumber {
+  bottom: -2rem;
+  border-color: var(--card-2);
+  color: var(--card-2);
+  box-shadow: var(--card-2) 0px 4px 8px;
+}
+.corpcard-3 .cardnumber {
+  top: -2rem;
+  border-color: var(--card-3);
+  color: var(--card-3);
+  box-shadow: var(--card-3) 0px 4px 8px;
+}
+.corpcard-4 .cardnumber {
+  bottom: -2rem;
+  border-color: var(--card-4);
+  color: var(--card-4);
+  box-shadow: var(--card-4) 0px 4px 8px;
+}
+
 @media screen and (max-width: 48rem) {
   .companyprofile .subtitle {
     font-size: 1rem;
+  }
+
+  .corpcard-3,
+  .corpcard-4 {
+    margin-top: 2rem;
   }
 }
 
